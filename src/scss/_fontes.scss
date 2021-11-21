@@ -1,0 +1,50 @@
+//FONTES
+@mixin centranube-book {
+    font-family: 'CentralNube Book';
+}
+@mixin centranube-bookitalic {
+    font-family: 'CentralNube Book Italic';
+}
+@mixin centranube-medium {
+    font-family: 'CentralNube Medium';
+}
+@mixin centranube-mediumitalic {
+    font-family: 'CentralNube Medium Italic';
+}
+
+@font-face {
+    font-family: 'CentralNube Book';
+    src: url('./../fontes/CentraNube-Book.eot');
+    src: url('./../fontes/CentraNube-Book.eot?#iefix') format('embedded-opentype'),
+        url('./../fontes/CentraNube-Book.woff') format('woff'),
+        url('./../fontes/centranube-book-webfont.woff2') format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CentralNube Book Italic';
+    src: url('./../fontes/CentraNube-BookItalic.eot');
+    src: url('./../fontes/CentraNube-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../fontes/CentraNube-BookItalic.woff') format('woff'),
+        url('./../fontes/centranube-bookitalic-webfont.woff2') format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CentralNube Medium';
+    src: url('./../fontes/CentraNube-Medium.eot');
+    src: url('./../fontes/CentraNube-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../fontes/CentraNube-Medium.woff') format('woff'),
+        url('./../fontes/centranube-medium-webfont.woff2') format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CentralNube Medium Italic';
+    src: url('./../fontes/CentraNube-MediumItalic.eot');
+    src: url('./../fontes/CentraNube-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../fontes/CentraNube-MediumItalic.woff') format('woff'),
+        url('./../fontes/centranube-mediumitalic-webfont.woff2') format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}

@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 73px;
+    padding: 18px 28px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    a {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: $grey;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        figure {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 5px;
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

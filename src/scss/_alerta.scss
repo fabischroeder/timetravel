@@ -1,0 +1,22 @@
+#desktop-alerta {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: $deep-blue-bg;
+    .container-lg {
+        overflow: auto;
+    }
+    h2, figure {
+        padding: 1rem 0;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    b {
+        color: $light-blue;
+    }
+}

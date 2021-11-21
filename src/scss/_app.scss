@@ -1,0 +1,157 @@
+header {
+    padding: 2rem 2rem 11rem 2rem;
+    color: $white;
+    background-color: $deep-blue-bg;
+
+    .col-left {
+        figure {
+            padding-left: 1.5rem;
+        }
+    }
+
+    h2.name {
+        padding: 3.5rem 0 0 0;
+    }
+    h3 {
+        font-weight: 400;
+        padding: 1rem 0;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+
+#ticket {
+    display: grid;
+    position: relative;
+    margin: -8.5rem auto 0;
+    border-radius: 8px;
+    color: $green;
+    background-color: $light-green;
+    max-width: 354px;
+    min-height: 250px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 119px;
+        left: -18px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(45deg, #2D2938, #2D2938 100%), linear-gradient(135deg, #FAFAFA, #FAFAFA), linear-gradient(225deg, #2D2938, #2D2938) , linear-gradient(225deg, #FAFAFA, #FAFAFA);
+        background-size: 50% 50%;
+        background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 32px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 119px;
+        right: -18px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(45deg, #2D2938, #2D2938 100%), linear-gradient(135deg, #FAFAFA, #FAFAFA), linear-gradient(225deg, #2D2938, #2D2938) , linear-gradient(225deg, #FAFAFA, #FAFAFA);
+        background-size: 50% 50%;
+        background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 32px;
+    }
+
+    .content {
+        padding: 0 0 0 3.5rem;
+        height: 100%;
+    }
+
+    .col-vertical {    
+        transform: rotate(270deg) translate(0, -50%);
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+    }
+
+    .col-horizontal {
+        display: grid;
+        padding: 1.5rem;
+        height: 100%;
+        background-image: url(./../img/ticket-dotted.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    small {
+        display: block;
+        padding: .5rem 0;
+    }
+
+    .ticket-id {
+        width: 100%;
+    }
+    .ticket-date {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .ticket-departure {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+
+main {
+    padding: 0 2rem;
+}
+#agree {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    input[type="checkbox"] {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 3px;
+        background-color: $blue;
+        border: 1px solid $blue;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:checked {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: 5px;
+                display: block;
+                width: 12px;
+                height: 9px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(./../img/input-check.svg);
+            }
+        }
+    }
+    p {
+        width: calc(100% - 24px);
+        padding-left: .5rem;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $grey;
+    }
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
